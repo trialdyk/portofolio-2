@@ -1,0 +1,39 @@
+<div class="boot-screen">
+  <svg class="boot-logo" viewBox="0 0 48 48" aria-hidden="true">
+    <defs>
+      <linearGradient id="boot-g" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#4ec3f7" />
+        <stop offset="1" stop-color="#0a66c9" />
+      </linearGradient>
+    </defs>
+    <g fill="url(#boot-g)">
+      <rect x="2" y="2" width="21" height="21" rx="1" />
+      <rect x="25" y="2" width="21" height="21" rx="1" />
+      <rect x="2" y="25" width="21" height="21" rx="1" />
+      <rect x="25" y="25" width="21" height="21" rx="1" />
+    </g>
+  </svg>
+  <div class="win-spinner"><i></i><i></i><i></i><i></i><i></i></div>
+</div>
+<style>
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+  .boot-screen { position: fixed; inset: 0; z-index: 20000; background: #000; }
+  .boot-logo { position: absolute; top: 40%; left: 50%; width: 112px; height: 112px; transform: translate(-50%, -50%); }
+  .win-spinner { position: absolute; top: 72%; left: 50%; width: 44px; height: 44px; margin: -22px 0 0 -22px; }
+  .win-spinner i { position: absolute; inset: 0; opacity: 0; animation: win-orbit 5.5s infinite; }
+  .win-spinner i::after { content: ''; position: absolute; top: 0; left: 50%; width: 5px; height: 5px; margin-left: -2.5px; border-radius: 50%; background: #fff; }
+  .win-spinner i:nth-child(2) { animation-delay: 0.24s; }
+  .win-spinner i:nth-child(3) { animation-delay: 0.48s; }
+  .win-spinner i:nth-child(4) { animation-delay: 0.72s; }
+  .win-spinner i:nth-child(5) { animation-delay: 0.96s; }
+  @keyframes win-orbit {
+    0% { transform: rotate(225deg); opacity: 1; animation-timing-function: ease-out; }
+    7% { transform: rotate(345deg); animation-timing-function: linear; }
+    30% { transform: rotate(455deg); animation-timing-function: ease-in-out; }
+    39% { transform: rotate(690deg); animation-timing-function: linear; }
+    70% { transform: rotate(815deg); opacity: 1; animation-timing-function: ease-out; }
+    75% { transform: rotate(945deg); animation-timing-function: ease-out; }
+    76% { transform: rotate(945deg); opacity: 0; }
+    100% { transform: rotate(945deg); opacity: 0; }
+  }
+</style>

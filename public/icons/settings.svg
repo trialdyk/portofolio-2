@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8e9cad"/><stop offset="1" stop-color="#46525f"/></linearGradient>
+    <linearGradient id="h" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef3f8"/><stop offset="1" stop-color="#b3c0cf"/></linearGradient>
+    <rect id="t" x="20" y="3.5" width="8" height="10" rx="2.2"/>
+  </defs>
+  <g fill="#5d6a78">
+    <use href="#t" xlink:href="#t"/>
+    <use href="#t" xlink:href="#t" transform="rotate(45 24 24)"/>
+    <use href="#t" xlink:href="#t" transform="rotate(90 24 24)"/>
+    <use href="#t" xlink:href="#t" transform="rotate(135 24 24)"/>
+    <use href="#t" xlink:href="#t" transform="rotate(180 24 24)"/>
+    <use href="#t" xlink:href="#t" transform="rotate(225 24 24)"/>
+    <use href="#t" xlink:href="#t" transform="rotate(270 24 24)"/>
+    <use href="#t" xlink:href="#t" transform="rotate(315 24 24)"/>
+  </g>
+  <circle cx="24" cy="24" r="15.5" fill="url(#g)"/>
+  <circle cx="24" cy="24" r="7.2" fill="url(#h)"/>
+  <circle cx="24" cy="24" r="15" fill="none" stroke="#fff" stroke-opacity=".18"/>
+</svg>

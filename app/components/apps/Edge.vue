@@ -284,7 +284,7 @@ const skillGroups = computed(() => {
             </header>
             <section>
               <h2>Summary</h2>
-              <p>{{ profile.tagline }} Writing code since {{ profile.codingSince }}, focused on modern web apps built with Vue, Nuxt, TypeScript and Node.js.</p>
+              <p>{{ profile.tagline }} Writing code since {{ profile.codingSince }}, focused on web and mobile apps built with Laravel, Vue.js, Nuxt.js, Golang and Flutter.</p>
             </section>
             <section>
               <h2>Experience</h2>

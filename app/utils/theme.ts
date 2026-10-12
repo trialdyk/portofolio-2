@@ -11,7 +11,7 @@ export interface Wallpaper {
 
 export const WALLPAPERS: Wallpaper[] = [
   { id: 'bloom-light', name: 'Windows (light)', src: '/wallpapers/bloom-light.svg', theme: 'light', accent: '#0078d4' },
-  { id: 'bloom-dark', name: 'Windows (dark)', src: '/wallpapers/bloom-dark.svg', theme: 'dark', accent: '#0078d4' },
+  { id: 'bloom-dark', name: 'Windows (dark)', src: '/wallpapers/bloom-dark.jpg', theme: 'dark', accent: '#0078d4' },
   { id: 'glow', name: 'Glow', src: '/wallpapers/glow.svg', theme: 'dark', accent: '#8764b8' },
   { id: 'sunrise', name: 'Sunrise', src: '/wallpapers/sunrise.svg', theme: 'light', accent: '#f7630c' },
   { id: 'flow', name: 'Flow', src: '/wallpapers/flow.svg', theme: 'light', accent: '#00b7c3' },

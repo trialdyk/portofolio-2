@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: https://trialdyk.dev/sitemap.xml
+Sitemap: https://trialdyk.id/sitemap.xml

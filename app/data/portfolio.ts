@@ -12,7 +12,7 @@ export interface Social {
 export interface Skill {
   name: string
   icon: string
-  category: 'Frontend' | 'Backend' | 'Database' | 'Tools'
+  category: 'Frontend' | 'Backend' | 'Mobile' | 'Database' | 'Tools'
   level: number
   since: number
 }
@@ -51,128 +51,73 @@ export interface Education {
 }
 
 export const profile = {
-  name: 'Trialdyk',
+  name: 'Tri Aldy Kurniawan',
   username: 'trialdyk',
-  role: 'Full-Stack Developer',
-  tagline: 'Building fast, accessible and delightful web experiences.',
-  location: 'Indonesia',
-  email: 'hello@example.com',
+  role: 'Fullstack Developer',
+  tagline: 'Transforming ideas into elegant digital solutions — and exploring the fascinating world of psychology.',
+  location: 'Malang, Jawa Timur, Indonesia',
+  email: 'trialdykk@gmail.com',
   /** Put an image in /public and reference it here, e.g. '/avatar.jpg'. Initials are shown when empty. */
-  avatar: '',
+  avatar: '/profile.png',
   /** Put your CV in /public and reference it here, e.g. '/resume.pdf', to enable the download button. */
   resumeFile: '',
-  codingSince: 2019,
+  codingSince: 2021,
   openToWork: true,
   languages: [
     { name: 'Bahasa Indonesia', level: 'Native' },
     { name: 'English', level: 'Professional working proficiency' },
   ],
-  interests: ['Open source', 'UI engineering', 'Developer tooling', 'Coffee'],
+  interests: ['Psychology', 'Human behavior', 'Habits & productivity', 'Coffee'],
 }
 
 /** SEO & social sharing. Replace /public/og-image.png when your name or role changes. */
 export const site = {
-  url: 'https://trialdyk.dev',
+  url: 'https://trialdyk.id',
   title: `${profile.name} — ${profile.role}`,
   description: `${profile.name} is a ${profile.role} based in ${profile.location}. ${profile.tagline} Explore projects, skills and experience in a Windows 11–style portfolio.`,
   ogImage: '/og-image.png',
 }
 
 export const socials: Social[] = [
-  { id: 'github', name: 'GitHub', handle: '@your-username', url: 'https://github.com/your-username', icon: 'mdi:github' },
-  { id: 'linkedin', name: 'LinkedIn', handle: 'in/your-username', url: 'https://www.linkedin.com/in/your-username', icon: 'mdi:linkedin', color: '#0a66c2' },
-  { id: 'instagram', name: 'Instagram', handle: '@your-username', url: 'https://www.instagram.com/your-username', icon: 'mdi:instagram', color: '#e1306c' },
+  { id: 'github', name: 'GitHub', handle: '@trialdyk', url: 'https://github.com/trialdyk', icon: 'mdi:github' },
+  { id: 'linkedin', name: 'LinkedIn', handle: 'in/trialdyk', url: 'https://linkedin.com/in/trialdyk', icon: 'mdi:linkedin', color: '#0a66c2' },
+  { id: 'instagram', name: 'Instagram', handle: '@trialdyk', url: 'https://instagram.com/trialdyk', icon: 'mdi:instagram', color: '#e1306c' },
   { id: 'email', name: 'Email', handle: profile.email, url: `mailto:${profile.email}`, icon: 'mdi:email-outline', color: '#0f6cbd' },
 ]
 
 export const skills: Skill[] = [
-  { name: 'HTML5', icon: 'logos:html-5', category: 'Frontend', level: 95, since: 2019 },
-  { name: 'CSS3', icon: 'logos:css-3', category: 'Frontend', level: 90, since: 2019 },
-  { name: 'JavaScript', icon: 'logos:javascript', category: 'Frontend', level: 92, since: 2019 },
-  { name: 'TypeScript', icon: 'logos:typescript-icon', category: 'Frontend', level: 88, since: 2021 },
-  { name: 'Vue.js', icon: 'logos:vue', category: 'Frontend', level: 92, since: 2020 },
-  { name: 'Nuxt', icon: 'logos:nuxt-icon', category: 'Frontend', level: 90, since: 2021 },
-  { name: 'React', icon: 'logos:react', category: 'Frontend', level: 78, since: 2021 },
-  { name: 'Tailwind CSS', icon: 'logos:tailwindcss-icon', category: 'Frontend', level: 90, since: 2021 },
-  { name: 'Node.js', icon: 'logos:nodejs-icon', category: 'Backend', level: 85, since: 2020 },
-  { name: 'Bun', icon: 'logos:bun', category: 'Backend', level: 75, since: 2023 },
-  { name: 'Laravel', icon: 'logos:laravel', category: 'Backend', level: 80, since: 2020 },
-  { name: 'PostgreSQL', icon: 'logos:postgresql', category: 'Database', level: 80, since: 2021 },
-  { name: 'MySQL', icon: 'logos:mysql-icon', category: 'Database', level: 82, since: 2019 },
-  { name: 'Docker', icon: 'logos:docker-icon', category: 'Tools', level: 72, since: 2022 },
-  { name: 'Git', icon: 'logos:git-icon', category: 'Tools', level: 90, since: 2019 },
-  { name: 'Figma', icon: 'logos:figma', category: 'Tools', level: 70, since: 2021 },
+  { name: 'HTML', icon: 'logos:html-5', category: 'Frontend', level: 100, since: 2021 },
+  { name: 'CSS/SCSS', icon: 'logos:css-3', category: 'Frontend', level: 100, since: 2021 },
+  { name: 'JavaScript', icon: 'logos:javascript', category: 'Frontend', level: 100, since: 2021 },
+  { name: 'TypeScript', icon: 'logos:typescript-icon', category: 'Frontend', level: 90, since: 2021 },
+  { name: 'Vue.js', icon: 'logos:vue', category: 'Frontend', level: 100, since: 2023 },
+  { name: 'Nuxt.js', icon: 'logos:nuxt-icon', category: 'Frontend', level: 90, since: 2023 },
+  { name: 'Tailwind CSS', icon: 'logos:tailwindcss-icon', category: 'Frontend', level: 100, since: 2021 },
+  { name: 'Bootstrap', icon: 'logos:bootstrap', category: 'Frontend', level: 75, since: 2021 },
+  { name: 'React', icon: 'logos:react', category: 'Frontend', level: 50, since: 2021 },
+  { name: 'Next.js', icon: 'logos:nextjs-icon', category: 'Frontend', level: 25, since: 2024 },
+  { name: 'PHP', icon: 'logos:php', category: 'Backend', level: 100, since: 2021 },
+  { name: 'Laravel', icon: 'logos:laravel', category: 'Backend', level: 100, since: 2023 },
+  { name: 'Golang', icon: 'logos:go', category: 'Backend', level: 75, since: 2024 },
+  { name: 'Node.js', icon: 'logos:nodejs-icon', category: 'Backend', level: 75, since: 2021 },
+  { name: 'Java', icon: 'logos:java', category: 'Backend', level: 50, since: 2021 },
+  { name: 'Dart', icon: 'logos:dart', category: 'Mobile', level: 75, since: 2024 },
+  { name: 'Flutter', icon: 'logos:flutter', category: 'Mobile', level: 75, since: 2024 },
+  { name: 'MySQL', icon: 'logos:mysql-icon', category: 'Database', level: 100, since: 2023 },
+  { name: 'PostgreSQL', icon: 'logos:postgresql', category: 'Database', level: 90, since: 2024 },
+  { name: 'MongoDB', icon: 'logos:mongodb-icon', category: 'Database', level: 50, since: 2021 },
+  { name: 'Redis', icon: 'logos:redis', category: 'Database', level: 25, since: 2021 },
+  { name: 'SQL', icon: 'mdi:database', category: 'Database', level: 75, since: 2021 },
+  { name: 'VS Code', icon: 'logos:visual-studio-code', category: 'Tools', level: 100, since: 2021 },
+  { name: 'Git', icon: 'logos:git-icon', category: 'Tools', level: 100, since: 2021 },
+  { name: 'GitHub', icon: 'logos:github-icon', category: 'Tools', level: 100, since: 2021 },
+  { name: 'Figma', icon: 'logos:figma', category: 'Tools', level: 90, since: 2021 },
+  { name: 'Postman', icon: 'logos:postman-icon', category: 'Tools', level: 90, since: 2021 },
+  { name: 'Docker', icon: 'logos:docker-icon', category: 'Tools', level: 50, since: 2021 },
+  { name: 'Linux', icon: 'logos:linux-tux', category: 'Tools', level: 75, since: 2021 },
 ]
 
 export const projects: Project[] = [
-  {
-    slug: 'nuxt-commerce',
-    name: 'Nuxt Commerce',
-    summary: 'A blazing-fast headless e-commerce storefront.',
-    description:
-      'A headless storefront with server-side rendering, instant search, cart & checkout flow, and an admin dashboard for managing products and orders.',
-    tech: ['Nuxt', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Stripe'],
-    year: 2025,
-    role: 'Full-stack developer',
-    status: 'Live',
-    demo: 'https://example.com',
-    repo: 'https://github.com/your-username/nuxt-commerce',
-    colors: ['#2563eb', '#06b6d4'],
-  },
-  {
-    slug: 'taskflow',
-    name: 'TaskFlow',
-    summary: 'Kanban-style project management for small teams.',
-    description:
-      'Real-time boards with drag & drop, comments, labels and due-date reminders. Built with a collaborative-first data model and optimistic UI updates.',
-    tech: ['Vue', 'Pinia', 'Node.js', 'Socket.IO', 'PostgreSQL'],
-    year: 2024,
-    role: 'Full-stack developer',
-    status: 'Live',
-    demo: 'https://example.com',
-    repo: 'https://github.com/your-username/taskflow',
-    colors: ['#7c3aed', '#ec4899'],
-  },
-  {
-    slug: 'skycast',
-    name: 'SkyCast',
-    summary: 'A beautiful weather dashboard with 7-day forecasts.',
-    description:
-      'Weather dashboard with location search, hourly charts, air-quality index and offline support as an installable PWA.',
-    tech: ['Vue', 'Chart.js', 'PWA', 'OpenWeather API'],
-    year: 2024,
-    role: 'Frontend developer',
-    status: 'Live',
-    demo: 'https://example.com',
-    repo: 'https://github.com/your-username/skycast',
-    colors: ['#0ea5e9', '#22c55e'],
-  },
-  {
-    slug: 'stockwise',
-    name: 'StockWise',
-    summary: 'Inventory & point-of-sale system for retail stores.',
-    description:
-      'Multi-branch inventory tracking, purchase orders, barcode scanning and sales reports with exportable PDF invoices.',
-    tech: ['Laravel', 'Livewire', 'MySQL', 'Alpine.js'],
-    year: 2023,
-    role: 'Backend developer',
-    status: 'Archived',
-    repo: 'https://github.com/your-username/stockwise',
-    colors: ['#f97316', '#eab308'],
-  },
-  {
-    slug: 'pulse-chat',
-    name: 'Pulse Chat',
-    summary: 'Realtime chat app with rooms, typing indicators and reactions.',
-    description:
-      'Websocket-powered chat with public/private rooms, message reactions, typing indicators, image uploads and push notifications.',
-    tech: ['React', 'Bun', 'WebSocket', 'Redis'],
-    year: 2023,
-    role: 'Full-stack developer',
-    status: 'In progress',
-    repo: 'https://github.com/your-username/pulse-chat',
-    colors: ['#10b981', '#14b8a6'],
-  },
   {
     slug: 'windows-portfolio',
     name: 'Windows 11 Portfolio',
@@ -185,57 +130,178 @@ export const projects: Project[] = [
     status: 'Live',
     colors: ['#0078d4', '#60cdff'],
   },
+  {
+    slug: 'sipjaki',
+    name: 'SIPJAKI',
+    summary: 'Construction services information system for the construction industry.',
+    description:
+      'Construction Services Information System for transparency and business networking in the construction industry. Managed by national, provincial, and city construction supervisors.',
+    tech: ['Laravel', 'JavaScript', 'MySQL'],
+    year: 2024,
+    role: 'Fullstack developer & project manager',
+    status: 'Live',
+    demo: 'https://sipjaki.pasuruankab.com',
+    colors: ['#f97316', '#eab308'],
+  },
+  {
+    slug: 'tracer-study-system',
+    name: 'Tracer Study System',
+    summary: 'Alumni tracking and career monitoring for educational institutions.',
+    description: 'Alumni tracking and career monitoring system for educational institutions.',
+    tech: ['Laravel', 'JavaScript', 'MySQL'],
+    year: 2024,
+    role: 'Fullstack developer & project manager',
+    status: 'Live',
+    colors: ['#10b981', '#14b8a6'],
+  },
+  {
+    slug: 'e-rapor-trensains-tebuireng',
+    name: 'E-Rapor SMA Trensains Tebuireng',
+    summary: 'Digital report card system for high school.',
+    description: 'Digital report card system for high school with grade management and parent portal.',
+    tech: ['Laravel', 'Inertia.js', 'Vue.js', 'MySQL'],
+    year: 2024,
+    role: 'Fullstack developer',
+    status: 'Live',
+    colors: ['#7c3aed', '#ec4899'],
+  },
+  {
+    slug: 'lms-tryout-asn-indonesia',
+    name: 'LMS & Tryout ASN Indonesia',
+    summary: 'Learning platform and examination system for civil servant candidates.',
+    description:
+      'Learning management system and examination platform for civil servant candidates with comprehensive test features.',
+    tech: ['Laravel', 'JavaScript', 'MySQL'],
+    year: 2024,
+    role: 'Fullstack developer',
+    status: 'Live',
+    demo: 'https://asn-indonesia.com',
+    colors: ['#0ea5e9', '#22c55e'],
+  },
+  {
+    slug: 'toefl-test-asn',
+    name: 'TOEFL Test ASN',
+    summary: 'Integrated English proficiency testing system.',
+    description: 'Integrated English proficiency testing system for government civil servant assessment.',
+    tech: ['Laravel', 'JavaScript', 'MySQL'],
+    year: 2024,
+    role: 'Fullstack developer',
+    status: 'Live',
+    demo: 'https://asn-indonesia.com',
+    colors: ['#6366f1', '#8b5cf6'],
+  },
+  {
+    slug: 'boarding-school-management',
+    name: 'Boarding School Management',
+    summary: 'Boarding school management with a mobile app and PPOB payments.',
+    description:
+      'Integrated boarding school management system with mobile app and PPOB payment gateway for comprehensive school operations.',
+    tech: ['Laravel', 'Vue', 'Inertia.js', 'Flutter', 'MySQL'],
+    year: 2024,
+    role: 'Fullstack developer',
+    status: 'Live',
+    colors: ['#e11d48', '#f97316'],
+  },
+  {
+    slug: 'e-course-platform',
+    name: 'E-Course Platform',
+    summary: 'Online learning website similar to Udemy.',
+    description: 'Online learning website similar to Udemy with course creation, video streaming, and payment integration.',
+    tech: ['Next.js', 'Golang', 'PostgreSQL'],
+    year: 2024,
+    role: 'Fullstack developer',
+    status: 'Live',
+    colors: ['#0d9488', '#84cc16'],
+  },
+  {
+    slug: 'mischool',
+    name: 'MiSchool',
+    summary: 'Comprehensive school management platform.',
+    description:
+      'Comprehensive school management platform with attendance, curriculum, student/teacher data management, LMS, online examination, and digital report cards.',
+    tech: ['Laravel', 'Vue.js', 'Nuxt.js', 'JavaScript', 'MySQL'],
+    year: 2023,
+    role: 'Fullstack developer intern & project manager',
+    status: 'Live',
+    colors: ['#2563eb', '#06b6d4'],
+  },
 ]
 
 export const experience: Experience[] = [
   {
-    role: 'Full-Stack Developer',
-    company: 'Company Name',
-    location: 'Remote',
-    start: 'Jan 2024',
-    end: 'Present',
-    summary: 'Building and maintaining customer-facing web apps and internal tools.',
-    highlights: [
-      'Led the migration of a legacy SPA to Nuxt, cutting load time by 40%',
-      'Designed REST APIs used by web and mobile clients',
-      'Mentored junior developers through code reviews and pairing',
-    ],
-  },
-  {
-    role: 'Frontend Developer',
-    company: 'Startup Name',
-    location: 'Jakarta, Indonesia',
-    start: 'Mar 2022',
-    end: 'Dec 2023',
-    summary: 'Shipped product features end-to-end with a small, fast-moving team.',
-    highlights: [
-      'Built a reusable component library used across 3 products',
-      'Improved Lighthouse performance score from 62 to 95',
-    ],
-  },
-  {
-    role: 'Web Developer Intern',
-    company: 'Agency Name',
+    role: 'System Analyst',
+    company: 'Freelance',
     location: 'Indonesia',
-    start: 'Jun 2021',
-    end: 'Feb 2022',
-    summary: 'Developed landing pages and CMS-driven websites for clients.',
-    highlights: ['Delivered 10+ client websites with Laravel and Vue'],
+    start: 'Dec 2025',
+    end: 'Present',
+    summary: 'Working as a freelance System Analyst for various enterprise projects.',
+    highlights: [
+      'Analyzing business requirements and translating them into technical specifications',
+      'Creating system documentation and business process flows',
+      'Collaborating with development teams for solution implementation',
+    ],
+  },
+  {
+    role: 'Fullstack Developer',
+    company: 'Freelance Projects',
+    location: 'Indonesia',
+    start: 'Jul 2024',
+    end: 'Present',
+    summary:
+      'Working on various freelance projects while pursuing my degree using Laravel, Inertia.js, Nuxt.js, and Golang.',
+    highlights: [
+      'E-Rapor SMA Trensains Tebuireng — digital report card system for high school',
+      'LMS & Tryout ASN Indonesia — learning platform and examination system for civil servant candidates',
+      'TOEFL Test ASN — integrated English proficiency testing system',
+      'Boarding School Management — integrated system with mobile app and PPOB payment gateway',
+      'E-Course Platform — online learning website similar to Udemy with complete features',
+    ],
+  },
+  {
+    role: 'Fullstack Developer & Project Manager',
+    company: 'PT Hummatech Indonesia',
+    location: 'Indonesia',
+    start: 'Jan 2024',
+    end: 'Jun 2024',
+    summary:
+      'Worked full-time after completing internship. Led development teams while building enterprise systems using Laravel, Vue.js, and Nuxt.js.',
+    highlights: [
+      'Led development teams as Project Manager while actively coding',
+      'Continued development of School Management System with new features',
+      'Developed Tracer Study System for alumni tracking and career monitoring',
+      'Built SIPJAKI — Construction Services Information System for transparency and business networking',
+    ],
+  },
+  {
+    role: 'Fullstack Developer Intern & Project Manager',
+    company: 'PT Hummatech Indonesia',
+    location: 'Indonesia',
+    start: 'Jan 2023',
+    end: 'Dec 2023',
+    summary:
+      '1-year internship. Built large-scale enterprise systems using Laravel, Vue.js, and Nuxt.js while also managing project teams.',
+    highlights: [
+      'Built comprehensive School Management System (SMS) from scratch',
+      'Developed Attendance, Curriculum, and Data Management modules',
+      'Built integrated LMS, Online Examination, and E-Report Card systems',
+      'Managed project timelines and coordinated with development teams',
+    ],
   },
 ]
 
 export const education: Education[] = [
-  { school: 'University Name', degree: 'Bachelor of Computer Science', start: '2019', end: '2023' },
+  { school: 'Politeknik Negeri Malang', degree: 'D4 Informatics Engineering', start: '2024', end: 'Present' },
+  { school: 'SMKN 1 Kepanjen', degree: 'Software Engineering', start: '2021', end: '2024' },
 ]
 
 /** Shown as "available updates" in Settings > Windows Update. */
-export const learning = ['Rust', 'System design', 'Web performance']
+export const learning = ['Psychology', 'Next.js', 'Redis']
 
 export const deviceSpecs: [string, string][] = [
   ['Device name', `${profile.username.toUpperCase()}-PC`],
   ['Processor', 'Human Brain(R) Core(TM) i9 — powered by coffee @ 4.20 GHz'],
   ['Installed RAM', '16.0 GB (remembers every shortcut, forgets every name)'],
-  ['Device ID', 'DEV-2019-FULL-STACK'],
+  ['Device ID', 'DEV-2021-FULL-STACK'],
   ['System type', 'Full-stack developer, x64-based problem solver'],
   ['Pen and touch', 'Ten-finger touch typing support'],
 ]
@@ -244,30 +310,35 @@ export const aboutText = `Hi there! 👋
 
 I'm ${profile.name} — a ${profile.role} based in ${profile.location}.
 
-I love building web apps that feel fast, look clean and are a joy
-to use. Most days you'll find me working with Vue/Nuxt and TypeScript
-on the front end, and Node.js, Bun or Laravel on the back end.
+I build digital products that bridge technology and human experience
+— solutions that are both technically sound and intuitively designed.
+Most days you'll find me working with Laravel, Vue.js/Nuxt.js and
+Golang, and I'm currently studying D4 Informatics Engineering at
+Politeknik Negeri Malang.
 
 ----------------------------------------------------------------
 WHAT I DO
 ----------------------------------------------------------------
-- Build responsive, accessible web apps with Vue, Nuxt and React
-- Design and ship APIs with Node.js, Bun and Laravel
-- Model data with PostgreSQL and MySQL, ship with Docker
-- Obsess over performance, DX and small UI details
+- Build full-stack web apps with Laravel, Inertia.js, Vue.js and Nuxt.js
+- Create cross-platform mobile apps with Flutter
+- Design and ship backend services with Laravel and Golang
+- Analyze business requirements and document systems as a System Analyst
+- Model data with MySQL and PostgreSQL
 
 ----------------------------------------------------------------
 CURRENTLY
 ----------------------------------------------------------------
-- Building side projects in the open
+- Freelancing as a System Analyst and Fullstack Developer
+- Studying at Politeknik Negeri Malang (D4 Informatics Engineering)
 - Learning: ${learning.join(', ')}
-- ${profile.openToWork ? 'Open to freelance and full-time opportunities' : 'Not looking for new opportunities right now'}
+- ${profile.openToWork ? 'Available for freelance projects and collaboration opportunities' : 'Not looking for new opportunities right now'}
 
 ----------------------------------------------------------------
 FUN FACTS
 ----------------------------------------------------------------
 - This portfolio is a Windows 11 clone built with Nuxt 4 + Bun
-- I've probably restarted my dev server 10,000 times
+- I've been writing code since vocational school in ${profile.codingSince}
+- I'm fascinated by psychology and the way habits shape behavior
 - Tabs or spaces? Let's not talk about it.
 
 ----------------------------------------------------------------
